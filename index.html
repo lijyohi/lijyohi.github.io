@@ -1,3 +1,179 @@
-<h1>hello</h1>
-<h2>hello</h2>
-<h3>hello</h3>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>HRT-电气组</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: black; /* 设置网页背景颜色为浅灰色 */         
+        }  
+  
+        .menu {  
+            background-color: #333;  
+            overflow: hidden;  
+            padding: 10px 0;  
+            text-align: center;  
+        }  
+  
+        .menu a {  
+            color: white;  
+            text-decoration: none;  
+            padding: 14px 20px;  
+            display: inline-block;  
+        }  
+  
+        .menu a:hover {  
+            background-color: black;  
+            color: white;  
+        } 
+  
+        .content img {  
+            max-width: 50%; /* 确保图片宽度不超过父容器 */  
+            height: auto; /* 保持图片原始宽高比 */  
+            margin: 50px 0; /* 图片上下间距 */  
+            margin-bottom: -50px;
+            margin-top: -50px;
+        }  
+  
+        .section {  
+            display: none; /* 默认隐藏所有内容部分 */  
+        }  
+  
+        .active {  
+            display: block; /* 当激活时显示 */  
+        }  
+        .questions {
+            font-size: 50px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-weight: bold;
+            padding-top: 100px; 
+            padding: 50px;
+            /* margin-top: 10px; */
+        }
+
+        .ans {
+            font-size: 30px;
+            color: rgb(119, 198, 240);
+            padding: 100px;
+        } 
+  
+        .q-a-container {  
+            display: flex;  
+            flex-direction: column; /* 默认是列布局，但在这里我们主要用它来包裹内容 */  
+        }  
+  
+        .image-container {  
+             display: flex; /* 启用flex布局 */  
+             justify-content: space-between; /* 图片之间有空隙 */  
+             align-items: center; /* 图片垂直居中（如果需要的话） */  
+             margin-top: 10px; /* 与上方内容保持一定距离 */  
+             margin-bottom: 20px;
+             padding: 50px;
+        }  
+  
+        .image-container img {  
+             max-width: 47%; /* 调整为更合适的宽度，以适应并排显示 */  
+             height: auto;  
+             flex-shrink: 0; /* 防止图片被压缩 */  
+        }  
+        .employee {
+          color: white;
+          padding-top: 50px;
+          padding-left: 50px;
+        }
+        .call {
+          color: rgb(119, 198, 240);
+          font-family: 'Courier New', Courier, monospace;
+          font-weight: bold;
+          font-size: 50px;
+          text-align: center;
+        }
+    </style> 
+
+</head>
+
+
+
+<body>  
+  
+<div class="menu">  
+      <a href="javascript:void(0);" onclick="showSection('about')">关于我们</a>
+      <a href="javascript:void(0);" onclick="showSection('members')">队员简介</a>
+      <a href="javascript:void(0);" onclick="showSection('work')">工作内容</a>
+      <a href="javascript:void(0);" onclick="showSection('activities')">精彩活动</a>
+      <a href="javascript:void(0);" onclick="showSection('contact')">联系我们</a>
+</div>  
+<div class="content">  
+    <div id="about" class="section">  
+      <div class="q-a-container">  
+          <div class="questions">Q1:HRT-D&E是什么样的组织?</div>  
+          <div class="ans">&nbsp;&nbsp;&nbsp;&nbsp;哈尔滨工业大学电动&无人驾驶方程式赛车队(HRT-D&E),由原HRT电动方程式赛车队及HRT无人驾驶方程式赛车队于2019年12 月合并而成,是一支既具历史底蕴又具有年轻活力的车队。</div>  
+          <div class="image-container">  
+              <img src="hrt1.jpg" alt="HRT1">  
+              <img src="hrt2.jpg" alt="HRT2">  
+          </div>  
+          <div class="questions">Q2:电气组都负责哪些工作？</div>  
+          <div class="ans">&nbsp;&nbsp;&nbsp;&nbsp;...</div>  
+      </div>  
+    </div>
+    <div id="members" class="section">
+      <div class="employee-grid">  
+          <div class="employee">  
+              <h3>赵金鑫</h3>  
+              <p>职位：副队长</p>  
+              <p>21级学长</p>  
+          </div>  
+          <div class="employee">  
+              <h3>刘科良</h3>  
+              <p>职位：组长</p>  
+              <p>21级学长，江湖人称“院士”</p>  
+          </div>
+          <div class="employee">  
+            <h3>曲天泽</h3>  
+            <p>职位：技术总监</p>  
+            <p>21级学长，江湖人称“曲泽天下”</p>           
+          </div> 
+          <div class="employee">   
+            <p>职位：组长</p>  
+            <p>21级学长，江湖人称“院士”</p>  
+          </div>
+      </div>
+    </div>
+    <div id="work" class="section">
+      <h2>工作内容</h2>
+      <p>这里是工作内容的内容...</p>
+    </div>
+    <div id="activities" class="section">
+      <h2>精彩活动</h2>
+      <p>这里是精彩活动的内容...</p>
+    </div>
+    <div id="contact" class="section">
+      <div class="call">
+          <p>快来联系我们吧！</p>
+          <p>欢迎小东西加入！</p>
+          <p>联系方式:QQ:1794578021</p>
+      </div>
+    </div>
+</div>
+<script>
+  function showSection(id) {
+      // 隐藏所有内容部分
+      var sections = document.querySelectorAll('.section');
+      sections.forEach(function(section) {
+          section.classList.remove('active');
+      });
+  
+      // 显示指定的内容部分
+      var targetSection = document.getElementById(id);
+      targetSection.classList.add('active');
+  }
+  </script>
+  
+</body>  
+</html>
